@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roys wanimbi personal web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            line-height: 1.6;
+            color: dimgray;
+        }
+
+        /* header style */
+        header {
+            background-color: rgb(0, 26, 255);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* profile img style */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            margin-bottom: 2rem;
+            border: 4px solid white;
+            object-fit: cover;
+
+        }
+
+        /* about section */
+        .about {
+            padding: 4rem 2rem;
+        }
+
+        .about h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* projects section */
+        .projects {
+            padding: 4rem 2rem;
+            background-color: #a0adb1;
+
+        }
+
+        .projects h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 0 1rem;
+
+        }
+
+        .projects-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        /* contact scetion */
+
+        .contact {
+            padding: 4rem 2rem;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 2rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #fd7b02;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: #fd1f02;
+        }
+
+        .social-icons {
+            margin: 2rem 0;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 8px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #fce308;
+        }
+
+        /* link style */
+        a {
+            text-decoration: none;
+            color: #fcf808;
+        }
+
+
+        a:hover {
+            color: #fce308;
+        }
+
+
+
+        /* footer style */
+
+        footer {
+            background-color: rgb(16, 156, 156);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="profile.jpg" alt="" class=profile-img>
+        <h1>Roys wanimbo</h1>
+        <p>Pengembag & Desainer web</p>
+    </header>
+
+    <!-- header end -->
+    <section class="about">
+        <h2>Tetang Saya</h2>
+        <p>Saya seorang mahasiswa di Kampus Uningrat Papua, jurusan Informatika. Saat ini, saya aktif dalam komunitas
+            Sacode untuk menguasai bahasa pemrograman dan mengembangkan keterampilan di bidang teknologi. Saya ingin
+            terus belajar dan berkontribusi dalam dunia pemrograman, khususnya dalam membangun solusi digital yang
+            bermanfaat👏📚🚀💻.</p>
+    </section>
+
+    <section class="projects">
+        <h2>Project Saya</h2>
+        <div class="projects-grid">
+
+            <div class="projects-card">
+                <img src="profile.jpg" alt="" project-img>
+                <h3>Projek 1</h3>
+                <p>Keren! Belajar coding secara otodidak itu bikin kamu lebih mandiri dan kreatif dalam menyelesaikan
+                    masalah. Selain dari komunitas Sacode, biasanya kamu belajar dari sumber apa? YouTube, dokumentasi,
+                    atau platform seperti Codecademy dan freeCodeCamp?</p>
+            </div>
+            <div class="projects-card">
+                <img src="https://b2bdaily.com/wp-content/uploads/2025/02/image-1740060702-141142-original.webp" alt="">
+                <h3>Projek 2</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat tempore assumenda cum architecto
+                    totam non.</p>
+            </div>
+            <div class="projects-card">
+                <img src="https://img.freepik.com/premium-photo/business-worker-using-laptop-data-analytics_666288-503.jpg"
+                    alt="">
+                <h3>Projek 3</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat tempore assumenda cum architecto
+                    totam non.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>Hubugi Saya</h2>
+        <div class="social-icons">
+            <a href="https://github.com/royswanimbo"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/roys.wanimbo/"><i class="fab fa-instagram"></i></a>
+            <a href="https://royswanimbo.websites.co.in/"><i class="fab fa-facebook"></i></a>
+            <a href="https://royswanimbo.websites.co.in/"><i class="fab fa-whatsapp"></i></a>
+
+        </div>
+        <a href="wanimboroys35@gmail.com" class="contact-btn">Kontak Saya</a>
+    </section>
+    <!-- section end -->
+    <footer>
+        <p>
+            2025 Roys wanimbo. Dibuat dan dikembangkan oleh <a href="https://github.com/royswanimbo " "target="
+                _blank"">Roys wanimbo</a>
+        </p>
+    </footer>
+
+    <!-- footer end -->
+</body>
+
+</html>
